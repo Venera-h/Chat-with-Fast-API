@@ -3,15 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Socket MQ Chat V0</title>
-    <!-- Базовая библиотека HTMX -->
+    <title>Socket MQ Chat</title>
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
-    <!-- Расширение для WebSocket-интеграции (ws-connect / ws-send) -->
     <script src="https://unpkg.com/htmx-ext-ws@2.0.2/ws.js"></script>
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
-    <!-- Контент каждой страницы подставляется в этот блок -->
     <main class="container">{% block content %}{% endblock %}</main>
   </body>
 </html>
