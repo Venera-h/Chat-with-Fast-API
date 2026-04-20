@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Room: {{ room_id }}</h2>
+
+<div hx-ext="ws" ws-connect="/ws/{{ room_id }}">
+  <div id="messages" class="messages"></div>
+
+  <form class="message-form" ws-send>
+    <input name="username" placeholder="Username" required />
+    <input name="text" placeholder="Message" required />
+    <button type="submit">Send</button>
+  </form>
+</div>
+{% endblock %}
